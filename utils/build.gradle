@@ -15,9 +15,13 @@ repositories {
 
 publishing {
     publications {
+        //noinspection GroovyAssignabilityCheck
         maven(MavenPublication) {
+            //noinspection GroovyAssignabilityCheck
             groupId = 'com.epam.utils'
+            //noinspection GroovyAssignabilityCheck
             artifactId = 'utils'
+            //noinspection GroovyAssignabilityCheck
             version = '1.0-SNAPSHOT'
             from components.java
         }
