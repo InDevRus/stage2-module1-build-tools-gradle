@@ -7,7 +7,7 @@ import java.util.Optional;
 
 public class StringUtils {
     public static boolean isPositiveNumber(String string) {
-        return Optional.of(string)
+        return Optional.ofNullable(string)
                 .filter(NumberUtils::isCreatable)
                 .map(NumberUtils::createBigDecimal)
                 .map(decimal -> decimal.compareTo(BigDecimal.ZERO) > 0)
