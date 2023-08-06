@@ -1,7 +1,17 @@
-//add everything here
+group = 'com.epam.demo'
+version = '1.0'
+
+
+repositories {
+    mavenCentral()
+}
 
 test {
     useJUnitPlatform()
+}
+
+dependencies {
+    implementation project(':utils')
 }
 
 compileJava {}.dependsOn(':utils:publishToMavenLocal')
